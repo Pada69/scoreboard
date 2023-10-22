@@ -10,11 +10,15 @@ function addOneHome () {
     homeScoreEl.textContent = homeScore;
 }
 
+window.addOneHome = addOneHome;
+
 function addTwoHome () {
     homeScore += 2
     winner()
     homeScoreEl.textContent = homeScore;
 }
+
+window.addTwoHome = addTwoHome;
 
 function addThreeHome () {
     homeScore += 3
@@ -22,11 +26,15 @@ function addThreeHome () {
     homeScoreEl.textContent = homeScore;
 }
 
+window.addThreeHome = addThreeHome;
+
 function addOneGuest () {
     guestScore += 1
     winner()
     guestScoreEl.textContent = guestScore;
 }
+
+window.addOneGuest = addOneGuest;
 
 function addTwoGuest () {
     guestScore += 2
@@ -34,11 +42,15 @@ function addTwoGuest () {
     guestScoreEl.textContent = guestScore;
 }
 
+window.addTwoGuest = addTwoGuest;
+
 function addThreeGuest () {
     guestScore += 3
     winner()
     guestScoreEl.textContent = guestScore;
 }
+
+window.addThreeGuest = addThreeGuest;
 
 function reset () {
     homeScore = 0;
@@ -47,6 +59,8 @@ function reset () {
     homeScoreEl.textContent = homeScore;
     guestScoreEl.textContent = guestScore;
 }
+
+window.rest = reset;
 
 function winner () {
     if (homeScore > guestScore) {
@@ -60,4 +74,6 @@ function winner () {
         guestScoreEl.style.backgroundColor = "#080001";
     }
 }
+
+window.winner = winner;
 
