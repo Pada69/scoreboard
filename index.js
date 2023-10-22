@@ -60,7 +60,7 @@ function reset () {
     guestScoreEl.textContent = guestScore;
 }
 
-window.rest = reset;
+window.reset = reset;
 
 function winner () {
     if (homeScore > guestScore) {
