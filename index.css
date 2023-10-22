@@ -1,0 +1,78 @@
+@font-face {
+	font-family: Timer;
+	src: url('CursedTimerUlil-Aznm.ttf');
+}
+
+body {
+    background-color: #1B244A;
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    margin: 0;
+}
+
+.home, .guest, .new-game {
+    width: 155px;
+    margin-top: 50px;
+    font-size: 40px;
+    flex-direction: column;
+}
+
+.board-score {
+    font-family: Timer;
+    font-size: 90px;
+    margin: 10px 0px;
+    padding-top: 10px;
+    color: #F94F6D;
+    background-color: #080001;
+    border-radius: 5px;
+}
+
+.add-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#reset-btn {
+    margin: 160px 20px 0px 20px;
+    font-family: Timer;
+    background: none;
+    font-size: 30px;
+    color: #9AABD8;
+    padding: 5px 10px 0 10px;
+    border-radius: 5px;
+}
+
+#reset-btn:hover, #add-one-btn:hover, #add-two-btn:hover, #add-three-btn:hover {
+    background-color: #9AABD8;
+    border-color: #9AABD8;
+    color: #1B244A;
+}
+
+#add-one-btn, #add-two-btn, #add-three-btn {
+    font-family: Timer;
+    font-size: 18px;
+    background: none;
+    color: #9AABD8;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+button {
+
+}
+
+
